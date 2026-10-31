@@ -20,6 +20,7 @@ class GalleryForm
                             ->label('Foto Dokumentasi')
                             ->image()
                             ->imageEditor() // Admin bisa crop/edit gambar langsung di sini!
+                            ->disk('public')
                             ->directory('galleries') // Akan masuk ke folder storage/app/public/galleries
                             ->required()
                             ->columnSpanFull(),

@@ -30,6 +30,7 @@ Route::get('/paket-wisata/{tipe}/{lokasi}', [TravelPackageController::class, 'by
 
 Route::view('/custom-paket', 'customPaket');
 Route::view('/tentang-arfaka', 'about');
+Route::view('/about','about');
 
 // Rute Halaman Galeri
 Route::get('/galeri', [GalleryController::class, 'galeri'])->name('gallery');

@@ -38,6 +38,7 @@ class BannerForm
                         FileUpload::make('image')
                             ->label('Gambar Banner')
                             ->image()
+                            ->disk('public')
                             ->directory('banners')
                             ->required()
                             ->imageEditor() 
